@@ -26,7 +26,8 @@ london_co = {
     }
 }
 
-what = input('Введите имя устройства: ')
-current = input('Введите имя параметра: ')
-print(london_co[what][current])
 
+what = input('Введите имя устройства: ')
+ls = tuple(x for x in london_co[what])
+current = input(f'Введите имя параметра {ls}: ').lower()
+print(london_co[what][current])
