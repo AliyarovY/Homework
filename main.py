@@ -26,6 +26,7 @@ london_co = {
     }
 }
 
-what = input('Enter ')
-print(london_co[what])
+what = input('Введите имя устройства: ')
+current = input('Введите имя параметра: ')
+print(london_co[what][current])
 
